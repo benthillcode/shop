@@ -1,1 +1,45 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
+header {
+    background-color: rgb(255, 153, 102);
+    color: rgb(128, 0, 0);
+    text-align: center;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: wavy;
+    color: rgb(128, 0, 0);
+}
+
+main {
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+}
+
+table img {
+    width: 100%;
+    height: auto;
+}
+
+table p {
+    text-align: center;
+}
