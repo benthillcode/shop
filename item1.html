@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Item 1</title>
+</head>
+<body>
+    <header>
+        <h1>Online Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="item1">
+            <img src="item1.jpg" alt="Item 1">
+            <h2>Item 1</h2>
+            <p>Item Number: 001</p>
+            <p>Price: $50.00</p>
+            <p>Detailed description of Item 1 goes here.</p>
+            <button onclick="buyNow()">BUY NOW</button>
+        </div>
+    </main>
+
+    <script>
+        function buyNow() {
+            var name = prompt("Enter your name:");
+            var email = prompt("Enter your email:");
+            var shippingAddress = prompt("Enter your shipping address:");
+
+            // Assume you have a server-side script to handle the email and process the order
+            // You can use AJAX to send this data to the server
+            var orderData = {
+                itemName: "Item 1",
+                itemPrice: "$50.00",
+                quantity: 1,
+                name: name,
+                email: email,
+                shippingAddress: shippingAddress
+            };
+
+            console.log(orderData);
+            alert("Thank you for your purchase!");
+        }
+    </script>
+</body>
+</html>
