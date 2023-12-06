@@ -19,44 +19,30 @@
     <main>
         <div id="item1">
             <img src="item1.jpg" alt="Item 1">
-            <h2>Clown suit</h2>
+            <h1>Clown suit</h1>
             <p>Item Number: 001</p>
             <p>Price: $50.00</p>
             <p>This is the perfect outfit for Eagles fans of all shapes, sizes, and age. The suit perfectly represents what is means to support the Philidelphia Eagles.</p>
             <button onclick="buyNow()">BUY NOW</button>
         </div>
     </main>
+<h2>Please enter your information to purchase</h2>
+<form action="mailto:bthill@student.antilles.vi" method="post" enctype="text/plain">
+First Name: <span style="color:red">*</span> <br><input type="text" name="firstname" required > <br>
+Email:<span style="color:red">*</span> <br><input type="email" name="email" required> <br>
+Date of Birth:<br><input type="date" name="dob"><br>
+<br>Favorite Island:
+<br><br>recive news?<br>
+Sunscreen: <input type="checkbox" name="Yes" value="Yes">
+Towel: <input type="checkbox" name="No" value="No">
+Rate our Website (all white=worst all blue=best): <input type="range" name="rating" min="0" max="10">
+Enter Phone Number: <input type="tel" name="phone" placeholder="340-779-3456" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+<br>Favorite Website: <input type="url" name="url" placeholder="https://example.com" size="30" />
+<br>Leave a Comment: <textarea rows="5" cols="50" name="comment" > Write comment here...</textarea>
 
-    <script>
-        function buyNow() {
-            var name = prompt("Enter your name:");
-            var email = prompt("Enter your email:");
-            var shippingAddress = prompt("Enter your shipping address:");
-
-            // Assume you have a server-side script to handle the email and process the order
-            // You can use AJAX to send this data to the server
-            var orderData = {
-                itemName: "Item 1",
-                itemPrice: "$50.00",
-                quantity: 1,
-                name: name,
-                email: email,
-                shippingAddress: shippingAddress
-            };
-
-            console.log(orderData);
-            alert("Thank you for your purchase!");
-        }
-    </script>
-    <h2>Please provide feedback</h2>
-    <form action="/action_page.php">
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname" value="firstname"><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname" value="lastname"><br><br>
- <label for="email">Enter your email:</label>
-  <input type="email" id="email" name="email">
-  <input type="submit" value="Submit">
+<br><br><input type="reset" value="Reset">
+<input type="submit" value="Submit form and purchase">
 </form>
+    
 </body>
 </html>
