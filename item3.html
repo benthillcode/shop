@@ -1,1 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Trash Bag</title>
+</head>
+<body>
+    <header>
+        <h1>The utilitarian trash bag</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <main>
+        <div id="item3">
+           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmL-cUqF0yPR1eq6s2eJzBaVX4pjryCuDhPQ&usqp=CAU" style="width:150px; height="150px">
+            <h1>Clown Mask</h1>
+            <p>Item Number: 002</p>
+            <p>Price: $50.00</p>Spice up your look at gametime by showing the true personality of a Eagles superfan and what bettter way to do so than this stylish clowm mask.</p>
+        </div>
+    </main>
+<h2>Please enter your information to purchase</h2>
+<form action="mailto:bthill@student.antilles.vi" method="post" enctype="text/plain">
+First Name: <span style="color:red">*</span> <br><input type="text" name="firstname" required > <br>
+Email:<span style="color:red">*</span> <br><input type="email" name="email" required> <br>
+Date of Birth:<br><input type="date" name="dob"><br>
+<br><br>recive news?<br>
+Yes: <input type="checkbox" name="Yes" value="Yes">
+No: <input type="checkbox" name="No" value="No">
+Rate our Website (all white=worst all Red=best): <input type="range" name="rating" min="0" max="10">
+Enter Phone Number: <input type="tel" name="phone" placeholder="340-779-3456" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+<br>Leave a Comment: <textarea rows="5" cols="50" name="comment" > Write comment here...</textarea>
+
+<br><br><input type="reset" value="Reset">
+<input type="submit" value="Submit form and purchase">
+</form>
+    
+</body>
+</html>
