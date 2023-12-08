@@ -32,15 +32,7 @@ main {
     padding: 20px;
 }
 
-table {
-    width: 100%;
-}
-
-table img {
-    width: 100%;
-    height: auto;
-}
-
-table p {
+td {
     text-align: center;
 }
+    
